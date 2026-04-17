@@ -46,14 +46,26 @@ where $s$ denotes a sensing state such as `flat`, `tilted`, or `stepped`.
 
 ### Multi-state operator
 
-If multiple sensing states are available, represent them through stacked measurements and a stacked forward operator:
+If multiple sensing states are available, represent them as a stacked measurement vector and operator:
 
 $$
-\tilde{y} = \big[\, y^{(1)},\; y^{(2)},\; \dots,\; y^{(K)} \,\big]^\top
+\tilde{y} =
+\begin{bmatrix}
+y^{(1)} \\
+y^{(2)} \\
+\vdots \\
+y^{(K)}
+\end{bmatrix}
 $$
 
 $$
-\tilde{A} = \big[\, (A^{(1)})^\top,\; (A^{(2)})^\top,\; \dots,\; (A^{(K)})^\top \,\big]^\top
+\tilde{A} =
+\begin{bmatrix}
+A^{(1)} \\
+A^{(2)} \\
+\vdots \\
+A^{(K)}
+\end{bmatrix}
 $$
 
 $$
