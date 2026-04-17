@@ -68,10 +68,6 @@ $$
 \tilde{y} = \tilde{A}x + \tilde{\varepsilon}
 $$
 
----
-
-## Inverse problems
-
 ### Tikhonov regularisation
 
 $$
