@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nlos-cs"
+version = "0.1.0"
+description = "Compressive sensing toolkit for metasurface-assisted NLOS sensing and imaging"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Anuraag Sharma" }
+]
+keywords = [
+  "nlos",
+  "compressive-sensing",
+  "metasurface",
+  "inverse-problem",
+  "imaging",
+  "electromagnetics"
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "PyYAML>=6.0",
+  "rich>=13.7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.6.0",
+  "mypy>=1.10"
+]
+notebooks = [
+  "jupyter>=1.0",
+  "ipykernel>=6.29"
+]
+
+[project.scripts]
+nlos-cs = "nlos_cs.cli.main:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+no_implicit_optional = true

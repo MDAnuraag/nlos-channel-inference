@@ -1,0 +1,88 @@
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Compiled extensions / binaries ---
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+
+# --- Packaging / build artefacts ---
+build/
+dist/
+site/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Test / coverage / type-check caches ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+
+# --- IDE / editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Local config / secrets ---
+.env
+.env.*
+*.local
+
+# --- Project data: keep raw data out of git by default ---
+data/raw/
+data/interim/
+data/processed/
+
+# --- Generated results / figures / reports ---
+outputs/
+reports/
+figures/
+
+# --- Legacy thesis outputs / heavy numerics ---
+legacy_outputs/
+legacy_reports/
+*.npy
+*.npz
+*.mat
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# --- CST / simulation exports that are usually too large or machine-specific ---
+*.txt.bak
+*.csv.bak
+
+# --- Keep folder structure placeholders ---
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!outputs/.gitkeep
+!reports/.gitkeep
+!figures/.gitkeep
