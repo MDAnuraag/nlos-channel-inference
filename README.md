@@ -70,16 +70,18 @@ $$
 \tilde{y} = \tilde{A}x + \tilde{\varepsilon}
 $$
 
+## Inverse problems
+
 ### Tikhonov regularisation
 
 $$
 \hat{x}_\lambda =
-\arg\min_x \|Ax-y\|_2^2 + \lambda \|x\|_2^2
+\arg\min_x \|Ax - y\|_2^2 + \lambda \|x\|_2^2
 $$
 
 $$
 \hat{x}_\lambda =
-(A^\top A + \lambda I)^{-1}A^\top y
+(A^\top A + \lambda I)^{-1} A^\top y
 $$
 
 $$
@@ -91,7 +93,7 @@ $$
 
 $$
 \hat{x} =
-\arg\min_x \|Ax-y\|_2^2 + \lambda \|x\|_1
+\arg\min_x \|Ax - y\|_2^2 + \lambda \|x\|_1
 $$
 
 ### Constrained recovery
