@@ -86,10 +86,8 @@ $$
 
 $$
 \hat{x}_\lambda =
-V \operatorname{diag}\!\left(\frac{\sigma_i}{\sigma_i^2 + \lambda}\right) U^\top y
+V \, \mathrm{diag}\!\left(\frac{\sigma_i}{\sigma_i^2 + \lambda}\right) U^\top y
 $$
-
----
 
 ### Sparse recovery
 
@@ -98,15 +96,11 @@ $$
 \arg\min_x \|Ax-y\|_2^2 + \lambda \|x\|_1
 $$
 
----
-
 ### Constrained recovery
 
 $$
 x \ge 0, \quad \sum_i x_i = 1
 $$
-
----
 
 ### Robust loss
 
@@ -118,8 +112,8 @@ $$
 $$
 \rho_\delta(r)=
 \begin{cases}
-\frac{1}{2}r^2 & |r|\le\delta \\
-\delta\left(|r|-\frac{1}{2}\delta\right) & |r|>\delta
+\frac{1}{2}r^2, & |r|\le\delta \\
+\delta\left(|r|-\frac{1}{2}\delta\right), & |r|>\delta
 \end{cases}
 $$
 
