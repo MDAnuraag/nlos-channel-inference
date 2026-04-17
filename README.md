@@ -46,24 +46,14 @@ where $s$ denotes a sensing state such as `flat`, `tilted`, or `stepped`.
 
 ### Multi-state operator
 
-If multiple sensing states are available, they should be represented explicitly as one composite operator:
+If multiple sensing states are available, represent them as a single composite operator:
 
 $$
 \tilde{y} =
-\begin{bmatrix}
-y^{(1)} \\
-y^{(2)} \\
-\vdots \\
-y^{(K)}
-\end{bmatrix}
+\begin{bmatrix} y^{(1)} \\ y^{(2)} \\ \vdots \\ y^{(K)} \end{bmatrix}
 =
-\begin{bmatrix}
-A^{(1)} \\
-A^{(2)} \\
-\vdots \\
-A^{(K)}
-\end{bmatrix}
-x + \tilde{\varepsilon}
+\begin{bmatrix} A^{(1)} \\ A^{(2)} \\ \vdots \\ A^{(K)} \end{bmatrix} x
++ \tilde{\varepsilon}
 $$
 
 $$
