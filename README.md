@@ -46,6 +46,8 @@ where $s$ denotes a sensing state such as `flat`, `tilted`, or `stepped`.
 
 ### Multi-state operator
 
+If multiple sensing states are available, they should be represented explicitly as one composite operator:
+
 $$
 \tilde{y} =
 \begin{bmatrix}
