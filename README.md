@@ -32,7 +32,7 @@ This is therefore both:
 
 ## Core forward model
 
-We observe a measurement vector \(y \in \mathbb{R}^m\) produced by a latent scene or object-position vector \(x \in \mathbb{R}^n\) through a sensing operator \(A \in \mathbb{R}^{m \times n}\):
+We observe a measurement vector $y \in \mathbb{R}^m$ produced by a latent scene or object-position vector $x \in \mathbb{R}^n$ through a sensing operator $A \in \mathbb{R}^{m \times n}$:
 
 $$
 y = Ax + \varepsilon
