@@ -1,0 +1,22 @@
+{
+  "experiment_type": "run_awgn_robustness",
+  "operator": {
+    "artifact_dir": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs/example_operator"
+  },
+  "solver": {
+    "type": "tikhonov",
+    "lambda_value": 0.5,
+    "use_svd": true,
+    "precompute_svd": true
+  },
+  "run_name": "example_awgn_robustness_tikhonov",
+  "output_root": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs",
+  "noise_levels": [0.0, 0.03, 0.05, 0.1, 0.2, 0.3],
+  "n_trials": 100,
+  "random_seed": 42,
+  "save_mean_x_hats": true,
+  "save_peak_count_cubes": true,
+  "measurement_metadata": {
+    "note": "Example config for CLI-driven AWGN robustness sweep with Tikhonov"
+  }
+}

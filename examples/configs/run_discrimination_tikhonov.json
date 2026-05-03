@@ -1,0 +1,21 @@
+{
+  "experiment_type": "run_discrimination",
+  "operator": {
+    "artifact_dir": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs/example_operator"
+  },
+  "solver": {
+    "type": "tikhonov",
+    "lambda_value": 0.5,
+    "use_svd": true,
+    "precompute_svd": true
+  },
+  "run_name": "example_discrimination_tikhonov",
+  "output_root": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs",
+  "mode": "matched",
+  "top_k_pairs": 10,
+  "save_x_hats": true,
+  "save_measurements": false,
+  "measurement_metadata": {
+    "note": "Example config for CLI-driven Tikhonov discrimination analysis"
+  }
+}

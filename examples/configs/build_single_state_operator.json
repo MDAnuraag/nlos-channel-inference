@@ -1,0 +1,21 @@
+{
+  "experiment_type": "build_single_state_operator",
+  "state_id": "tilted",
+  "measurement_kind": "e_mag",
+  "plane": {
+    "axis": "x",
+    "value_mm": 105.0,
+    "tol_mm": 1e-6
+  },
+  "position_to_file": {
+    "65.0": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/data/tilted/tilted_cylY065_26GHz.txt",
+    "70.0": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/data/tilted/tilted_cylY070_26GHz.txt",
+    "75.0": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/data/tilted/tilted_cylY075_26GHz.txt",
+    "80.0": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/data/tilted/tilted_cylY080_26GHz.txt",
+    "85.0": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/data/tilted/tilted_cylY085_26GHz.txt"
+  },
+  "run_name": "example_operator",
+  "output_root": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs",
+  "cst_skiprows": 2,
+  "save_probe_vectors": false
+}

@@ -86,3 +86,4 @@ legacy_reports/
 !outputs/.gitkeep
 !reports/.gitkeep
 !figures/.gitkeep
+/data

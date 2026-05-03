@@ -1,0 +1,23 @@
+{
+  "experiment_type": "run_reconstruction",
+  "operator": {
+    "artifact_dir": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs/example_operator"
+  },
+  "solver": {
+    "type": "tikhonov",
+    "lambda_value": 0.5,
+    "use_svd": true,
+    "precompute_svd": true
+  },
+  "run_name": "example_reconstruction_tikhonov",
+  "output_root": "C:/Users/ASUS/Documents/Work/nlos-channel-inference/outputs",
+  "measurement_mode": "operator_column",
+  "true_index": 0,
+  "noise_fraction_of_rms": 0.01,
+  "random_seed": 42,
+  "save_measurement": true,
+  "save_residual": true,
+  "measurement_metadata": {
+    "note": "Example config for CLI-driven Tikhonov reconstruction"
+  }
+}
